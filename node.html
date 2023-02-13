@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Node.JS CRUD</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Install Packages</h2>
+      <h5></h5>
+      <p>npm init</p>
+      <p>npm install --save express</p>
+      <p>npm install --save uuid</p>
+      </div>
+    <div class="card">
+      <h2>Create Folder Structure</h2>
+      <h5></h5>
+      <div><img src="folderstructure.png"></div>
+        </div>
+    <div class="card">
+      <h2>Create index.js File</h2>
+      <div><img src="indexjs.png"></div>
+      <p>In index.js file create localhost with port 5000, and Added Express package, route folder Path</p>
+      </div>
+      <div class="card">
+        <h2>Create Users.js File</h2>
+        <div><img src="usersjs.png"></div>
+        <p>In Users.js file create Dummy Json Data, Export module we can import any where in Application</p>
+        </div>
+        <div class="card">
+          <h2>Create Routes folder</h2>
+          <div><img src="route.png"></div>
+          <p>Create another folder with name api inside create users.js file</p>
+          <div><img src="userfolder.png"></div>
+          <p>Import,  module.exports = router in users.js</p>
+         
+          </div>
+          <div class="card">
+            <h2>Create API's</h2>
+            <h3>Get List API</h3>
+            <div><img src="getlist.png"></div>
+            <h3>Get by ID </h3>
+            <div><img src="getbyids.png"></div>
+            <h3>SAVE API </h3>
+            <div><img src="create.png"></div>
+            <h3>Update API </h3>
+            <div><img src="update.png"></div>
+            <h3>Delete API </h3>
+            <div><img src="delete.png"></div>
+            </div>
+  </div>
+  <!-- <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div> -->
+</div>
+
+
+
+</body>
+</html>
